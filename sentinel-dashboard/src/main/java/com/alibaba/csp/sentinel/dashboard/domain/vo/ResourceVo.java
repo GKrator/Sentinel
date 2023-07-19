@@ -110,7 +110,7 @@ public class ResourceVo {
             list.add(vo);
         }
         for (ResourceTreeNode c : node.getChildren()) {
-            visit(c, list, visible, false);
+            visit(c, list, c.visible, false);
         }
     }
 
